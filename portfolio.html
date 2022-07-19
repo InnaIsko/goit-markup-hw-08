@@ -111,7 +111,7 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section section-portfolio">
         <div class="container">
           <h1 class="title__visually-hidden">Портфолио</h1>
           <ul class="portfolio-nav">
@@ -123,7 +123,7 @@
                 Веб-сайты
               </button>
             </li>
-            <li class="portfolio-nav__item">
+            <li class="portfolio-nav__item portfolio-nav__item--indent">
               <button type="button" class="portfolio-nav__btn">
                 Приложения
               </button>
@@ -131,7 +131,7 @@
             <li class="portfolio-nav__item">
               <button type="button" class="portfolio-nav__btn">Дизайн</button>
             </li>
-            <li class="portfolio-nav__item">
+            <li class="portfolio-nav__item portfolio-nav__item--indent">
               <button type="button" class="portfolio-nav__btn">
                 Маркетинг
               </button>
@@ -142,12 +142,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/tehnokryk.jpg"
-                    alt="Экран ноутбука с открытым вэб сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tehnokryk450M.jpg 1x,
+                        ./images/tehnokrykM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tehnokryk354T.jpg 1x,
+                        ./images/tehnokrykT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tehnokryk370D.jpg 1x,
+                        ./images/tehnokrykD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/tehnokryk370D.jpg"
+                      alt="Экран ноутбука с открытым вэб сайтом"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -167,12 +192,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/NewOrlean.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/NewOrlean450M.jpg 1x,
+                        ./images/NewOrleanM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/NewOrlean354T.jpg 1x,
+                        ./images/NewOrleanT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/NewOrlean370D.jpg 1x,
+                        ./images/NewOrleanD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/NewOrlean370D.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -193,12 +243,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/Seafood.jpg"
-                    alt="Лого ресторана Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Seafood450M.jpg 1x,
+                        ./images/SeafoodM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Seafood354T.jpg 1x,
+                        ./images/SeafoodT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Seafood370D.jpg 1x,
+                        ./images/SeafoodD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/Seafood370D.jpg"
+                      alt="Лого ресторана Seafood"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -217,12 +292,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/Prime.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Prime450M.jpg 1x,
+                        ./images/PrimeM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Prime354T.jpg 1x,
+                        ./images/PrimeT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Prime370D.jpg 1x,
+                        ./images/PrimeD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/Prime370D.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -241,12 +341,36 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/Boxes.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Boxes450M.jpg 1x,
+                        ./images/BoxesM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Boxes354T.jpg 1x,
+                        ./images/BoxesT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Boxes370D.jpg 1x,
+                        ./images/BoxesD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./images/Boxes370D.jpg"
+                      alt="Две коробки"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -265,12 +389,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/InspirationhasnoBorders.jpg"
-                    alt="Монитор компьютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/InspirationhasnoBorders450M.jpg 1x,
+                        ./images/InspirationhasnoBordersM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/InspirationhasnoBorders354T.jpg 1x,
+                        ./images/InspirationhasnoBordersT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/InspirationhasnoBorders370D.jpg 1x,
+                        ./images/InspirationhasnoBordersD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/InspirationhasnoBorders370D.jpg"
+                      alt="Монитор компьютера"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -291,12 +440,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/LimitedEdition.jpg"
-                    alt="книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/LimitedEdition450M.jpg 1x,
+                        ./images/LimitedEditionM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/LimitedEdition354T.jpg 1x,
+                        ./images/LimitedEditionT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/LimitedEdition370D.jpg 1x,
+                        ./images/LimitedEditionD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/LimitedEdition370D.jpg"
+                      alt="книга"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -317,12 +491,28 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/LAB.jpg"
-                    alt="этикетка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/LAB450M.jpg 1x, ./images/LABM@2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="./images/LAB354T.jpg 1x, ./images/LABT@2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="./images/LAB370D.jpg 1x, ./images/LABD@2x.jpg 2x"
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/LAB370D.jpg"
+                      alt="этикетка"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -341,12 +531,37 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-wrap">
-                  <img
-                    src="./images/GrowingBusiness.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/GrowingBusiness450M.jpg 1x,
+                        ./images/GrowingBusinessM@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/GrowingBusiness354T.jpg 1x,
+                        ./images/GrowingBusinessT@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/GrowingBusiness370D.jpg 1x,
+                        ./images/GrowingBusinessD@2x.jpg 2x
+                      "
+                      media="(min-width: $desctop)"
+                    />
+
+                    <img
+                      class="team-list__img"
+                      src="./images/GrowingBusiness370D.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <div>
                     <p class="portfolio-text">
                       Ресурс предлагает комплексные предложения с разным уровнем

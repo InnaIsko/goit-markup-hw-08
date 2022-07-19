@@ -11,8 +11,11 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767px) {
     padding: 93px 15px 94px 15px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 208px 159px 207px 159px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -26,6 +29,8 @@
 }
 
 .modal {
+  position: relative;
+
   padding: 40px;
   // position: absolute;
   // top: 50%;
@@ -40,10 +45,6 @@
 
   // transform: translate(-50%, -50%) scale(1);
   // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: $mobile) {
-    position: relative;
-  }
 
   &__button {
     position: absolute;
@@ -73,10 +74,14 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  // line-height: 1.15;
   text-align: center;
 
   padding-bottom: 12px;
+
+  @media screen and (max-width: 1199px) {
+    line-height: 1.5;
+  }
 }
 
 .modal-form {
@@ -84,8 +89,8 @@
   // margin-left: auto;
   // margin-right: auto;
 
-  @media screen and (min-width: $mobile) {
-    width: 370px;
+  @media screen and (max-width: 767px) {
+    min-width: 370px;
   }
 
   &__item {
