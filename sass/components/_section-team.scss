@@ -8,6 +8,8 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+
+    margin: -15px;
   }
 
   &__item {
@@ -23,13 +25,15 @@
       width: 450px;
     }
     @media screen and (min-width: $tablet) {
-      width: 50%;
+      width: calc((100% - 2 * 30px) / 2);
+
+      margin: 15px;
     }
   }
   &__item:last-child {
     // margin-right: 0;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 0px;
     }
   }
