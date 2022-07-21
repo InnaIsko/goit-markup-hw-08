@@ -91,7 +91,7 @@
 }
 
 .modal-form {
-  @media screen and (max-width: 767px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     min-width: 370px;
   }
   @media screen and (min-width: $desctop) {
@@ -201,7 +201,7 @@
   &__text {
     color: $title-text-color;
 
-    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
       font-size: 12px;
       line-height: 1.16;
 

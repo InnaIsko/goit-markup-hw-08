@@ -53,7 +53,7 @@ p {
     padding-bottom: 94px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -78,7 +78,7 @@ img {
     font-size: 36px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .title {
     margin-bottom: 30px;
     font-size: 28px;
@@ -467,7 +467,7 @@ button:focus > svg {
   margin-right: auto;
   text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -478,7 +478,7 @@ button:focus > svg {
     background-size: 480px 400px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/HeaderimgM@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/HeaderimgM@2x.jpg);
@@ -763,7 +763,7 @@ button:focus > svg {
 .wrap {
   padding-top: 30px;
 }
-@media screen and (min-width: 480px), (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .wrap {
     padding-bottom: 24px;
   }
@@ -1361,7 +1361,7 @@ button:focus > svg {
     line-height: 1.5;
   }
 }
-@media screen and (max-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal-form {
     min-width: 370px;
   }
@@ -1497,7 +1497,7 @@ button:focus > svg {
 .modal-checkbox__text {
   color: #757575;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal-checkbox__text {
     font-size: 12px;
     line-height: 1.16;

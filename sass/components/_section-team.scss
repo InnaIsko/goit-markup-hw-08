@@ -48,7 +48,7 @@
 .wrap {
   padding-top: 30px;
 
-  @media screen and (min-width: $mobile), (min-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 24px;
   }
 
