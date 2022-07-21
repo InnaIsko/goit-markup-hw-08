@@ -1,11 +1,11 @@
 .footer-container {
   background-color: $secondary-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   display: block;
-  @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     align-items: baseline;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -29,36 +29,41 @@
   color: $footer-text-primary;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
 
   @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: 1.16;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 
   & > span {
     color: $accent-color;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
 
     @media screen and (min-width: $mobile) and (max-width: 1199) {
       font-size: 24px;
       line-height: 1.16;
     }
+    @media screen and (min-width: $desctop) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 }
 
 .footer-contact {
-  // margin-right: 70px;
-
   @media screen and (max-width: 767px) {
     text-align: center;
   }
   @media screen and (min-width: $tablet) {
     width: 50%;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-right: 70px;
   }
 }
 
@@ -103,13 +108,14 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  // margin-top: 12px;
-
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
   @media screen and (min-width: $tablet) {
     margin-top: 5px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 12px;
   }
 }
 
@@ -162,11 +168,13 @@
 }
 
 .mailing-wrap {
-  // margin-left: 93px;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
 
     margin-top: 63px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-left: 93px;
   }
 }
 
@@ -177,12 +185,13 @@
     flex-direction: column;
     align-items: center;
   }
-  //   align-items: flex-end;
+  @media screen and (min-width: $desctop) {
+    align-items: flex-end;
+  }
 
   &__text {
     color: $footer-text-primary;
     margin-bottom: 20px;
-    // margin-top: 12px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -191,6 +200,9 @@
     @media screen and (max-width: 1199px) {
       text-align: center;
     }
+    @media screen and (min-width: $desctop) {
+      margin-top: 12px;
+    }
   }
 
   &__input {
@@ -198,7 +210,6 @@
     line-height: 1.25;
     color: $footer-text-primary;
 
-    // min-width: 358px;
     min-height: 50px;
     padding-left: 16px;
     background-color: $secondary-background;
@@ -210,6 +221,10 @@
     @media screen and (max-width: 1199px) {
       min-width: 450px;
     }
+    @media screen and (min-width: $desctop) {
+      min-width: 358px;
+    }
+
     @media screen and (min-width: $desctop) {
       min-width: 358px;
     }
@@ -242,7 +257,7 @@
   color: $footer-text-primary;
   display: flex;
 
-  @media screen and (main-width: $desctop) {
+  @media screen and (min-width: $desctop) {
     margin-left: 12px;
   }
 

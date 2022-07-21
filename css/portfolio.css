@@ -110,11 +110,15 @@ img {
     padding-bottom: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -256,12 +260,22 @@ button:focus > svg {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    margin-right: 84px;
+  }
+}
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+    margin-right: 290px;
   }
 }
 
@@ -276,6 +290,13 @@ button:focus > svg {
 @media screen and (min-width: 768px) {
   .site-nav__item {
     margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__item:last-child,
+.contacts__item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -296,28 +317,26 @@ button:focus > svg {
   }
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .contacts__item {
-    margin-bottom: 32px;
-  }
-  .contacts__item__item:last-child {
-    margin-bottom: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -326,6 +345,19 @@ button:focus > svg {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__item-tel {
+    margin-bottom: 32px;
+  }
+}
+.contacts__item__item:last-child {
+  margin-bottom: 0px;
 }
 
 .contacts__link {
@@ -340,6 +372,19 @@ button:focus > svg {
 @media screen and (min-width: 768px) {
   .contacts__link:hover, .contacts__link:focus {
     color: #2196f3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -357,7 +402,7 @@ button:focus > svg {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item-mail:nth-child(1) {
     margin-bottom: 10px;
   }
@@ -421,12 +466,16 @@ button:focus > svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
   .portfolio-nav {
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .portfolio-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -440,6 +489,9 @@ button:focus > svg {
 @media screen and (min-width: 1200px) {
   .portfolio-nav {
     margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -449,7 +501,15 @@ button:focus > svg {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
+  .portfolio-nav__item {
+    margin-right: 8px;
+  }
+  .portfolio-nav__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
   .portfolio-nav__item:nth-child(-n+4) {
     margin-right: 8px;
   }
@@ -543,7 +603,7 @@ button:focus > svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio-list {
     margin: -15px;
   }
@@ -551,6 +611,20 @@ button:focus > svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-list__item {
     width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio-list__item {
+    margin-bottom: 30px;
+  }
+  .portfolio-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item {
+    width: calc((100% - 90px) / 3);
     margin: 15px;
   }
 }
@@ -566,6 +640,11 @@ button:focus > svg {
   font-size: 16px;
   line-height: 1.9;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-desck__text--mobile {
+    margin-bottom: 35px;
+  }
+}
 .portfolio-desck__title {
   color: #212121;
   font-weight: 700;
@@ -577,12 +656,12 @@ button:focus > svg {
 
 .footer-container {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
     text-align: center;
   }
 }
@@ -606,7 +685,7 @@ button:focus > svg {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-wrap {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -629,6 +708,12 @@ button:focus > svg {
     line-height: 1.16;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-contact__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .footer-contact__logo > span {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -640,6 +725,12 @@ button:focus > svg {
     line-height: 1.16;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-contact__logo > span {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .footer-contact {
@@ -649,6 +740,11 @@ button:focus > svg {
 @media screen and (min-width: 768px) {
   .footer-contact {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    margin-right: 70px;
   }
 }
 
@@ -698,6 +794,11 @@ button:focus > svg {
 @media screen and (min-width: 768px) {
   .footer-text {
     margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    margin-top: 12px;
   }
 }
 
@@ -761,10 +862,15 @@ button:focus > svg {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .mailing-wrap {
     width: 100%;
     margin-top: 63px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-wrap {
+    margin-left: 93px;
   }
 }
 
@@ -784,6 +890,13 @@ button:focus > svg {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-mailing {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 .footer-mailing__text {
   color: #ffffff;
   margin-bottom: 20px;
@@ -795,6 +908,11 @@ button:focus > svg {
 @media screen and (max-width: 1199px) {
   .footer-mailing__text {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__text {
+    margin-top: 12px;
   }
 }
 .footer-mailing__input {
@@ -813,6 +931,11 @@ button:focus > svg {
 @media screen and (max-width: 1199px) {
   .footer-mailing__input {
     min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__input {
+    min-width: 358px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -872,7 +995,7 @@ button:focus > svg {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (main-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mailin-button {
     margin-left: 12px;
   }

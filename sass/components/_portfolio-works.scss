@@ -40,13 +40,24 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  // gap: 30px;
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) {
     margin: -15px;
   }
   &__item {
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__item {
+    @media screen and (min-width: $desctop) {
+      width: calc((100% - 6 * 15px) / 3);
       margin: 15px;
     }
   }
@@ -62,6 +73,11 @@
     color: $title-text-color;
     font-size: 16px;
     line-height: 1.9;
+    &--mobile {
+      @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 35px;
+      }
+    }
   }
 
   &__title {

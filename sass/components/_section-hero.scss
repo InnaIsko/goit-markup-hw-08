@@ -3,7 +3,7 @@
   margin-right: auto;
   text-align: center;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     padding-top: 118px;
     padding-bottom: 118px;
 
@@ -28,7 +28,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
 
@@ -91,15 +91,16 @@
     margin-left: auto;
     margin-right: auto;
 
-    // font-size: 44px;
-    // line-height: 1.36;
     @media screen and (min-width: $mobile) {
       font-size: 26px;
       line-height: 1.61;
       max-width: 360px;
     }
-
-    // max-width: 700px;
+    @media screen and (min-width: $desctop) {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 700px;
+    }
   }
 }
 

@@ -5,11 +5,12 @@
 .team-list {
   text-align: center;
 
-  @media screen and (min-width: $tablet) and (max-width: $desctop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
-    flex-wrap: wrap;
-
     margin: -15px;
+  }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -20,12 +21,17 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     display: block;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
       width: 450px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 2 * 30px) / 2);
+
+      margin: 15px;
+    }
+    @media screen and (min-width: $desctop) {
+      width: calc(100% - 8 * 15px);
 
       margin: 15px;
     }
@@ -67,14 +73,16 @@
 
 .socials-list {
   display: flex;
-  // padding: 0 32px 0 32px;
   justify-content: space-between;
 
   @media screen and (max-width: 767px) {
     padding: 0 122px 0 122px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     padding: 0 74px 0 74px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding: 0 32px 0 32px;
   }
 }
 
