@@ -36,12 +36,12 @@ p {
     width: 1200px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     min-width: 480px;
   }
@@ -641,18 +641,17 @@ button:focus > svg {
     min-width: 450px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .features__picture {
-    min-width: 354px;
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
-    width: calc((100% - 30px) / 2);
-  }
-  .features__item:nth-child(-n+2) {
-    margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
