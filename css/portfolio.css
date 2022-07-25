@@ -26,6 +26,7 @@ p {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -38,12 +39,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
@@ -702,7 +703,7 @@ button:focus > svg {
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-contact__logo {
     font-size: 24px;
     line-height: 1.16;
@@ -719,7 +720,7 @@ button:focus > svg {
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
-@media screen and (min-width: 480px) and (max-width: 1199) {
+@media screen and (max-width: 1199px) {
   .footer-contact__logo > span {
     font-size: 24px;
     line-height: 1.16;
@@ -928,19 +929,19 @@ button:focus > svg {
   border-radius: 4px;
   outline: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .footer-mailing__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__input {
+    min-width: 358px;
+  }
+}
+@media screen and (min-width: 480px) {
   .footer-mailing__input {
     min-width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-mailing__input {
-    min-width: 358px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-mailing__input {
-    min-width: 358px;
   }
 }
 
