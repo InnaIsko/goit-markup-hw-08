@@ -1,20 +1,20 @@
 .hero {
+  width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/HeaderimgM.jpg);
 
-  @media screen and (max-width: 767px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     width: 480px;
-    height: 400px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/HeaderimgM.jpg);
     background-size: 480px 400px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

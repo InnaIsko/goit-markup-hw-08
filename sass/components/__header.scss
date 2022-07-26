@@ -248,10 +248,9 @@ button:focus > svg {
   }
 
   &-tel {
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
       font-size: 34px;
       line-height: 1.17;
-
       color: $accent-color;
     }
   }
@@ -283,6 +282,7 @@ button:focus > svg {
 .header-networks {
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
 
     margin-top: 64px;
   }
@@ -291,12 +291,13 @@ button:focus > svg {
   }
 
   &__link {
-    @media screen and (max-width: 767px) {
-      font-weight: 500;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
       font-size: 18px;
-      line-height: 1.22;
-      letter-spacing: 0.02em;
-      color: $accent-color;
     }
   }
 

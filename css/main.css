@@ -395,7 +395,7 @@ button:focus > svg {
     color: #757575;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts__link-tel {
     font-size: 34px;
     line-height: 1.17;
@@ -435,6 +435,8 @@ button:focus > svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 64px;
   }
 }
@@ -443,13 +445,16 @@ button:focus > svg {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
+.header-networks__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header-networks__link {
-    font-weight: 500;
     font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: #2196f3;
   }
 }
 @media screen and (max-width: 767px) {
@@ -464,22 +469,23 @@ button:focus > svg {
 }
 
 .hero {
+  width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/HeaderimgM.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/HeaderimgM.jpg);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
     width: 480px;
-    height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/HeaderimgM.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/HeaderimgM.jpg);
     background-size: 480px 400px;
   }
 }
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/HeaderimgM@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/HeaderimgM@2x.jpg);
@@ -590,7 +596,7 @@ button:focus > svg {
     margin: -15px;
   }
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .features {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -609,7 +615,7 @@ button:focus > svg {
     text-align: center;
   }
 }
-@media (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .features__icon {
     margin: 25px 190px;
   }
@@ -618,7 +624,7 @@ button:focus > svg {
   font-size: 14px;
   line-height: 1.71;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .features__text {
     margin-bottom: 30px;
   }
@@ -637,12 +643,12 @@ button:focus > svg {
   height: 120px;
   margin-bottom: 30px;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .features__picture {
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .features__picture {
     -ms-flex-preferred-size: 354px;
         flex-basis: 354px;
@@ -793,8 +799,9 @@ button:focus > svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 30px 0 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .socials-list {
     padding: 0 122px 0 122px;
   }
@@ -1278,6 +1285,7 @@ button:focus > svg {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 40;
   visually: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1297,28 +1305,29 @@ button:focus > svg {
 
 .modal {
   position: relative;
+  width: 100%;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
     min-width: 528px;
     min-height: 581px;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1357,7 +1366,10 @@ button:focus > svg {
     line-height: 1.5;
   }
 }
-@media screen and (max-width: 1199px) {
+.modal-form {
+  width: 100%;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-form {
     min-width: 370px;
   }
